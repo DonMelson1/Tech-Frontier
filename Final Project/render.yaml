@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: backend
+    env: python
+    repo: https://github.com/DonMelson1/Tech-Frontier/Final Project
+    branch: main
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    workingDir: backend
+    buildFilter:
+      paths:
+        - backend/**
