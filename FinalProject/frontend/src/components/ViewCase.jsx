@@ -38,7 +38,7 @@ function ViewCase() {
             className="bg-red-600 hover:bg-red-700 px-3 py-1 text-white rounded transition-colors"
             onClick={() => {
               axios
-                .delete(`http://localhost:5000/prediction/cases/delete/${caseId}`)
+                .delete(`https://tech-frontier-2-3vgy.onrender.com/prediction/cases/delete/${caseId}`)
                 .then((response) => {
                   if (response.data.success) {
                     const updated = cases.filter(c => c.Cases_id !== caseId)
