@@ -12,7 +12,7 @@ function ViewCase() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/prediction/cases/view')
+      .get('https://tech-frontier-2-3vgy.onrender.com/prediction/cases/view')
       .then((response) => {
         if (response.data.success) {
           setCases(response.data.cases)
