@@ -12,7 +12,7 @@ function Dashboard() {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    axios.get('http://localhost:5000/prediction/cases/view')
+    axios.get('https://tech-frontier-2-3vgy.onrender.com/prediction/cases/view')
       .then((res) => {
         if (res.data.success) {
           const caseData = res.data.cases
