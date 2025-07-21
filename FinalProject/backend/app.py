@@ -8,7 +8,7 @@ from tensorflow.keras.applications.densenet import preprocess_input
 from supabase import create_client, Client
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, supports_credentials=True)
 
 # ✅ Your Supabase credentials
 SUPABASE_URL = "https://xiwnhveiyqnaaonivfzp.supabase.co"
