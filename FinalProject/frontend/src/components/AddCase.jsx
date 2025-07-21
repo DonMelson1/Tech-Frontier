@@ -66,7 +66,7 @@ function AddCase() {
       formData.append('image', image)
 
       const response = await axios.post(
-        'http://localhost:5000/prediction/cases/add',
+        'https://tech-frontier-2-3vgy.onrender.com/prediction/cases/add',
         formData,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       )
